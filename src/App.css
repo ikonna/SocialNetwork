@@ -12,18 +12,3 @@
     grid-area: h;
 }
 
-.navigation {
-    background-color: darkgrey;
-    grid-area: n;
-}
-
-.content {
-    background-color: chocolate;
-    align-content: center;
-    grid-area: c;
-}
-
-.content > div > img {
-    height: 100px;
-    width: 100%;
-}
