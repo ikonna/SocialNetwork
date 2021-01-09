@@ -1,0 +1,9 @@
+.item{
+    color: yellowgreen;
+    text-align: left;
+}
+
+.item img {
+    width: 50px;
+    border: black;
+}

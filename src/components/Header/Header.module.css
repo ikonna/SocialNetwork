@@ -1,0 +1,9 @@
+.header {
+    background-color: mediumaquamarine;
+    grid-area: h;
+    border-image: -moz-linear-gradient();
+}
+
+.item {
+    color: white;
+}

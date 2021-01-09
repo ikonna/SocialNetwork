@@ -1,0 +1,10 @@
+.nav {
+    background-color: indigo;
+    grid-area: n;
+    font-size-adjust: revert;
+}
+
+.item {
+    color: yellowgreen;
+}
+
