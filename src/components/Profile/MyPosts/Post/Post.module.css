@@ -6,4 +6,6 @@
 .item img {
     width: 50px;
     border: black;
+    height: 80px;
+    border-radius: 30px;
 }

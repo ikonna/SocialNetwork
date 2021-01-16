@@ -6,14 +6,11 @@ import s from "./Post/Post.module.css";
 const MyPosts = () => {
     return (
         <div>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
             <div className={s.item}>
-                <textarea></textarea>
-                <button>Like</button>
-                <button>Remove</button>
+                debugger
+                <Post message='Wow that is so cool' l='43'/>
+                <Post message='HI how are you' l='77'/>
+
             </div>
         </div>
     )

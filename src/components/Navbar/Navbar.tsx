@@ -1,23 +1,19 @@
 import React from 'react';
 import s from './Navbar.module.css'
 
-//let s = {
-//    'nav': 'Navbar_navigation__gaxyV',
-//    'item': 'Navbar_item__1Raqz'
-//}
 const Navbar = () => {
     return <nav className={s.nav}>
         <div className={s.item}>
-            <a>Profile</a>
+            <a href="/profile">Profile</a>
         </div>
         <div className={s.item}>
-            <a>Messages</a>
+            <a href="/dialogs">Messages</a>
         </div>
         <div className={s.item}>
-            <a>Settings</a>
+            <a href="/settings">Settings</a>
         </div>
         <div className={s.item}>
-            <a>Photo</a>
+            <a href="/photo">Photo</a>
         </div>
     </nav>
 }

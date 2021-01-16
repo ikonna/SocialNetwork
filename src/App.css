@@ -12,3 +12,9 @@
     grid-area: h;
 }
 
+.site-wrapper-content {
+    background-color: indianred;
+    color: white;
+    align-content: center;
+    grid-area: c;
+}
