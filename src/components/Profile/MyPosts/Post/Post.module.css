@@ -1,6 +1,7 @@
 .item{
     color: yellowgreen;
     text-align: left;
+    margin: 20px;
 }
 
 .item img {
@@ -9,3 +10,12 @@
     height: 80px;
     border-radius: 30px;
 }
+
+.postsBlock {
+    padding: 50px;
+}
+
+h3{
+    color: black;
+}
+

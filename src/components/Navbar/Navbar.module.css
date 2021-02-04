@@ -1,10 +1,12 @@
 .nav {
     background-color: indigo;
-    grid-area: n;
-    font-size-adjust: revert;
+    text-decoration: none;
+    padding: 20px;
 }
 
-.item {
+.item a{
     color: yellowgreen;
+    text-decoration: none;
+    text-shadow: white;
 }
 
