@@ -1,3 +1,4 @@
+import {renderTree} from "../render";
 export type DialogType = {
     id: number,
     name: string
@@ -49,6 +50,8 @@ export const addMessage = (text: string) => {
         message: text
     }
     state.messagesData.push(newMessage)
+
+    renderTree(state)
 }
 
 export default state;
