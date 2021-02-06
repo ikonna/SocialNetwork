@@ -7,16 +7,13 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Settings from "./components/Settings/Settings"
 import {BrowserRouter, Route} from "react-router-dom"
 import Photo from './components/Photo/Photo';
-import {DialogType, MessegeType, PostType} from "./Redux/state";
+import {stateType} from "./Redux/state";
 
 
 type AppPropsType = {
-
-    appState: {
-        dialogsData: Array<DialogType>,
-        messagesData: Array<MessegeType>,
-        postsData: Array<PostType>
-    }
+    appState: stateType,
+    addPost: (text: string) => void
+    addMessage: (text: string) => void
 }
 
 function App(props: AppPropsType) {
@@ -28,9 +25,12 @@ function App(props: AppPropsType) {
                 <div className='site-wrapper-content'>
                     <Route exact path='/dialogs' render={() => <Dialogs
                         dialogsData={props.appState.dialogsData}
-                        messagesData={props.appState.messagesData}/>}/>
+                        messagesData={props.appState.messagesData}
+                        addMessage={props.addMessage}
+                    />}/>
                     <Route exact path='/profile' render={() => <Profile
-                        postData={props.appState.postsData}/>}/>
+                        postData={props.appState.postsData}
+                        addPost={props.addPost}/>}/>
                     <Route exact path='/settings' render={() => <Settings/>}/>
                     <Route exact path='/photo' render={() => <Photo/>}/>
                 </div>
@@ -38,5 +38,6 @@ function App(props: AppPropsType) {
         </BrowserRouter>
     );
 }
+
 
 export default App;
